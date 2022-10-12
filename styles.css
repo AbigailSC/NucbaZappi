@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;500;600;700;800&display=swap');
+:root {
+    /* background color */
+    --background: #252525;
+
+    --text-white: #ffffff;
+
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+/* header */
+header {
+    background: var(--background);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px 0px 30px;
+    position: fixed;
+    top: 0;
+
+}
+
+.logo {
+    height: 70%;
+    
+}
+
+.navbar {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px
+}
+.home {
+    width: 20%;
+}
+.carrito {
+    width: 22px;
+
+}
+.perfil {
+    width: 13px;
+}
+
+.terminos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #252525;
+    
+
+}
+
+.terminos-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.terminos-link a {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 15px 68px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    color:#ffffff;
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+    padding: 8px 15px;
+    gap: 5px;
+    background:#252525;
+
+}
+
+.footer p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: #ffffff;
+    
+
+}
+
+.footer span {
+    
+    font-size: 17px;
+    font-weight: 900;
+    color:#ffffff;
+    
+}
