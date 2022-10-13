@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1300;1400;1500;1600;1700;1800;1900 & mostrar=intercambiar');
 
+:root {
+  --background: #131415;
+  --backgroundBox: #252525;
+  --textPrimary: #ffffff;
+  --textDegradatePrimary: #FF7519;
+  --textDegradateSecundary: #FF0D54;
+  --textSecondary: #494949;
+  background-color: var(--background);
+  color: var(--textPrimary);
+}
 
-* {
+
+*{
+    box-sizing: border-box;  
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Montserrat; 
 }
 
 body {
-    font-family: 'Montserrat', sans-serif ;
     background: #131415;
     color: white;
 }
@@ -68,12 +79,6 @@ body {
     width: 90px;
     align-items: center;
     margin-top: 1rem;
-    
-    
-    
-
-
-
 }
 
 .item:nth-child(1) {
@@ -98,5 +103,133 @@ body {
     grid-row: 1/2;
     background: url(./assets/pizzaLandingB.png) no-repeat;
     background-size: 110%;
+}
 
+#popularityA {
+  padding: 0 5%;
+}
+
+.textPopularity {
+  font-weight: lighter;
+}
+
+.containerBoxPopularityA{
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px
+}
+
+.boxPopularityA {
+  background-color: var(--backgroundBox);
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 240px;
+  border-radius: 20px;
+  box-shadow: 0 25px 25px -12px rgb(0 0 0 / 0.4);
+  padding: 20px;
+}
+
+.boxPopularityA h3 {
+  margin: 8px 0 0 0;
+  font-weight: 400
+}
+
+.boxPopularityA p {
+  color: var(--textSecondary);
+  margin: 8px 0 8px 0;
+}
+
+.HStack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.HStack h3 {
+  background: -webkit-linear-gradient(0deg, var(--textDegradatePrimary), var(--textDegradateSecundary));
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  margin: 0;
+  font-weight: 800;
+}
+
+.HStack button {
+  background: -webkit-linear-gradient(0deg, var(--textDegradatePrimary), var(--textDegradateSecundary));
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  color: var(--textPrimary);
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.HStack button:hover {
+  background: -webkit-linear-gradient(0deg, #cf5e12, #cb0b44);
+  transition: .3s linear;
+}
+
+
+/* section categories*/
+
+#categories {
+    padding: 70px 60px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#categories h2 {
+    font-size: 15px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.info-categories-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.categories-card{
+    width: 135px;
+    height: 160px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #252525; 
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;
+}
+
+.categories-card h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.categories-card img {
+    width: 71px;
+    height: 71px;
+}
+
+#categories span {
+    width: 30px;
+    height: 4px;
+    margin-top: 12px;
+    border-radius: 15px;
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
 }
