@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
+:root {
+  --background: #131415;
+  --backgroundBox: #252525;
+  --textPrimary: #ffffff;
+  --textDegradatePrimary: #FF7519;
+  --textDegradateSecundary: #FF0D54;
+  --textSecondary: #494949;
+  background-color: var(--background);
+  color: var(--textPrimary);
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0D0D0D;
+}
+
 *{
     box-sizing: border-box;  
     margin: 0;
@@ -7,9 +23,75 @@
     font-family: Montserrat; 
 }
 
-body {
-    background: #0D0D0D;
+#popularityA {
+  padding: 0 5%;
 }
+
+.textPopularity {
+  font-weight: lighter;
+}
+
+.containerBoxPopularityA{
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px
+}
+
+.boxPopularityA {
+  background-color: var(--backgroundBox);
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 240px;
+  border-radius: 20px;
+  box-shadow: 0 25px 25px -12px rgb(0 0 0 / 0.4);
+  padding: 20px;
+}
+
+.boxPopularityA h3 {
+  margin: 8px 0 0 0;
+  font-weight: 400
+}
+
+.boxPopularityA p {
+  color: var(--textSecondary);
+  margin: 8px 0 8px 0;
+}
+
+.HStack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.HStack h3 {
+  background: -webkit-linear-gradient(0deg, var(--textDegradatePrimary), var(--textDegradateSecundary));
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  margin: 0;
+  font-weight: 800;
+}
+
+.HStack button {
+  background: -webkit-linear-gradient(0deg, var(--textDegradatePrimary), var(--textDegradateSecundary));
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  color: var(--textPrimary);
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.HStack button:hover {
+  background: -webkit-linear-gradient(0deg, #cf5e12, #cb0b44);
+  transition: .3s linear;
+}
+
 
 /* section categories*/
 
