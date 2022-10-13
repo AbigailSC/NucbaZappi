@@ -1,16 +1,265 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1300;1400;1500;1600;1700;1800;1900 & mostrar=intercambiar');
+
 :root {
-    --background: #131415;
-    --backgroundBox: #252525;
-    --textPrimary: #ffffff;
-    --textDegradatePrimary: #FF7519;
-    --textDegradateSecundary: #FF0D54;
-    --textSecondary: #494949;
-    background-color: var(--background);
-    color: var(--textPrimary);
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  #popularityB {
+  --background: #131415;
+  --backgroundBox: #252525;
+  --textPrimary: #ffffff;
+  --textDegradatePrimary: #FF7519;
+  --textDegradateSecundary: #FF0D54;
+  --textSecondary: #494949;
+  background-color: var(--background);
+  color: var(--textPrimary);
+}
+
+
+*{
+    box-sizing: border-box;  
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat; 
+}
+
+body {
+    background: #131415;
+    color: white;
+}
+
+header {
+    background: var(--background);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px 0px 30px;
+    position: fixed;
+    top: 0;
+
+}
+
+.logo {
+    height: 70%;
+    
+}
+
+.navbar {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px
+}
+.home {
+    width: 20%;
+}
+.carrito {
+    width: 22px;
+
+}
+.perfil {
+    width: 13px;
+}
+
+.terminos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #252525;
+}
+
+.terminos-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.terminos-link a {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 15px 68px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    color:#ffffff;
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+    padding: 8px 15px;
+    gap: 5px;
+    background:#252525;
+
+}
+
+.footer p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: #ffffff;
+    
+
+}
+
+.footer span {
+    
+    font-size: 17px;
+    font-weight: 900;
+    color:#ffffff;
+    
+}
+
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#hero-landing {
+    margin-top: 65px;
+    padding: 4em;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    /* place-content: center; */
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    /* gap:10px; */
+    height: 20em;
+
+} 
+
+.item:nth-child(1) h1 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.item:nth-child(1) h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.item:nth-child(1) p {
+    font-weight: 100;
+    font-size: 13px;
+    margin-top: 0.5rem;
+    display: flex;
+}
+
+.button-hero a {
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(90deg, #FFA100 0%, #FB103D 100%);
+    border-radius: 10px;
+    padding: 9px 5px;
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.item:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: #131415;
+    place-content: center;
+    gap: 10px;
+}
+
+.item:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;    
+    background: url(./assets/pizzaLanding.png) no-repeat center/cover;
+    background-size: 70%;
+}
+
+.item:nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background: url(./assets/pizzaLandingB.png) no-repeat;
+    background-size: 110%;
+}
+
+#popularityA {
+  padding: 0 5%;
+}
+
+.textPopularity {
+  font-weight: lighter;
+}
+
+.containerBoxPopularityA{
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px
+}
+
+.boxPopularityA {
+  background-color: var(--backgroundBox);
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 240px;
+  border-radius: 20px;
+  box-shadow: 0 25px 25px -12px rgb(0 0 0 / 0.4);
+  padding: 20px;
+}
+
+.boxPopularityA h3 {
+  margin: 8px 0 0 0;
+  font-weight: 400
+}
+
+.boxPopularityA p {
+  color: var(--textSecondary);
+  margin: 8px 0 8px 0;
+}
+
+.HStack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.HStack h3 {
+  background: -webkit-linear-gradient(0deg, var(--textDegradatePrimary), var(--textDegradateSecundary));
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  margin: 0;
+  font-weight: 800;
+}
+
+.HStack button {
+  background: -webkit-linear-gradient(0deg, var(--textDegradatePrimary), var(--textDegradateSecundary));
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  color: var(--textPrimary);
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.HStack button:hover {
+  background: -webkit-linear-gradient(0deg, #cf5e12, #cb0b44);
+  transition: .3s linear;
+}
+
+#popularityB {
     padding: 0 5%;
   }
   
@@ -78,3 +327,62 @@
     background: -webkit-linear-gradient(0deg, #cf5e12, #cb0b44);
     transition: .3s linear;
   }
+
+/* section categories*/
+
+#categories {
+    padding: 70px 60px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#categories h2 {
+    font-size: 15px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.info-categories-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.categories-card{
+    width: 135px;
+    height: 160px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #252525; 
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;
+}
+
+.categories-card h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.categories-card img {
+    width: 71px;
+    height: 71px;
+}
+
+#categories span {
+    width: 30px;
+    height: 4px;
+    margin-top: 12px;
+    border-radius: 15px;
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+}
