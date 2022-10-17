@@ -88,6 +88,7 @@ header {
     padding: 0px 30px 0px 30px;
     position: fixed;
     top: 0;
+    z-index: 30;
     /* border: 1px solid red */
 }
 
@@ -241,6 +242,12 @@ header {
   border: none;
   font-weight: 300;
   cursor: pointer;  
+  transition: .3s linear;
+}
+
+.recomend-card button:hover {
+  background: -webkit-linear-gradient(0deg, #cf5e12, #cb0b44);
+  transition: .3s linear;
 }
 
 #hero-landing {
@@ -618,6 +625,7 @@ header {
 .categories-card img {
     width: 71px;
     height: 71px;
+    position: relative;
 }
 
 #categories span {
@@ -626,4 +634,9 @@ header {
     margin-top: 12px;
     border-radius: 15px;
     background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+}
+
+#categories span:hover {
+    background: -webkit-linear-gradient(0deg, #cf5e12, #cb0b44);
+    transition: .3s linear;
 }
