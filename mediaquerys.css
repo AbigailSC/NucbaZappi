@@ -49,12 +49,14 @@
     gap: 40px;
     z-index: 10;
     display: none;
+    border-bottom: 1px solid var(--textSecondary);
   }
   .navbarListItems h3{
     display: flex;
     font-size: 24px;
     font-weight: 400;
     color: var(--textDegradatePrimary);
+    cursor: pointer;
   }
   .navbarListItems img {
     display: none;

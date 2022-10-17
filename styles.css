@@ -32,7 +32,7 @@ body {
 }
 
 #hero-landing {
-    padding:2em 0.5em;
+    padding: 2em 4em 0px 4em;
     /* width: 90%; */
     /* max-width: 1200px; */
     margin: auto;
@@ -129,7 +129,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .footer-link {
@@ -172,7 +172,7 @@ header {
   width: 100%;
   gap: 25px;
   background: #131415;
-  padding: 70px 60px;
+  padding: 30px 60px 0px 60px;
 }
 
 #recomend h2{
@@ -248,11 +248,6 @@ header {
 .recomend-card button:hover {
   background: -webkit-linear-gradient(0deg, #cf5e12, #cb0b44);
   transition: .3s linear;
-}
-
-#hero-landing {
-    margin-top: 65px;
-    padding: 4em;
 }
 
 .button-hero a {
@@ -399,7 +394,7 @@ header {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     100% {
         transform: scale(1);
@@ -415,28 +410,6 @@ header {
     width: 127px;
     font-weight: 800;
     transition: all 1s ease;
-}
-
-.item:nth-child(1) {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background: #131415;
-    place-content: center;
-    gap: 10px;
-}
-
-.item:nth-child(2) {
-    grid-column: 2/3;
-    grid-row: 1/2;    
-    background: url(./assets/pizzaLanding.png) no-repeat center/cover;
-    background-size: 70%;
-}
-
-.item:nth-child(3) {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    background: url(./assets/pizzaLandingB.png) no-repeat;
-    background-size: 110%;
 }
 
 #popularityA {
@@ -480,37 +453,6 @@ header {
 .boxPopularityA p {
   color: var(--textSecondary);
   margin: 8px 0 8px 0;
-}
-
-.HStack {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-
-.HStack h3 {
-  background: -webkit-linear-gradient(0deg, var(--textDegradatePrimary), var(--textDegradateSecundary));
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  margin: 0;
-  font-weight: 800;
-}
-
-.HStack button {
-  background: -webkit-linear-gradient(0deg, var(--textDegradatePrimary), var(--textDegradateSecundary));
-  border: none;
-  border-radius: 20px;
-  padding: 8px 20px;
-  color: var(--textPrimary);
-  cursor: pointer;
-  transition: .3s linear;
-}
-
-.HStack button:hover {
-  background: -webkit-linear-gradient(0deg, #cf5e12, #cb0b44);
-  transition: .3s linear;
 }
 
 #popularityB {
