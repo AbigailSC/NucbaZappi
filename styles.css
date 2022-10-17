@@ -103,6 +103,11 @@ header {
     justify-content: center;
     gap: 80px;
 }
+
+.navbarList img {
+  cursor: pointer;
+}
+
 .navbarListItems{
   display: flex;
   flex-direction: row;
