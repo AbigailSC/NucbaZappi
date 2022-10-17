@@ -1,0 +1,62 @@
+@media (max-width: 1056px) {
+  #hero-landing{
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-pizzas{
+    display: none;
+  }
+  .button-hero{
+    align-self: center;
+  }
+}
+@media (max-width: 700px) {
+  .containerBoxPopularityA{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer-link{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-link a{
+    padding: 16px;
+  }
+  #menuToggle, .menuLabel{
+    display: none;
+  }
+  .menuLabel {
+    display: flex;
+    cursor: pointer;
+  }
+  .menuLabel img {
+    height: 32px;
+    width: 32px;
+  }
+  #menuToggle:checked + .navbarList {
+    display: flex;
+  }
+  .navbarList {
+    position: absolute;
+    top:65px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--background);
+    padding: 40px 0;
+    gap: 40px;
+    z-index: 10;
+    display: none;
+  }
+  .navbarListItems h3{
+    display: flex;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--textDegradatePrimary);
+  }
+  .navbarListItems img {
+    display: none;
+  }
+}

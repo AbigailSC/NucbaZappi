@@ -25,9 +25,24 @@
     <header class="header">
       <img src="./assets/nucbazappiicon 1.png" alt="Icono de NucbaZappi" class="logo" />
       <nav class="navbar">
-        <img src="./assets/Icon Home Active.png" alt="Icono de Home" class="home" />
-        <img src="./assets/Icon Cart(1).png" alt="Icono de Compras" class="carrito" />
-        <img src="./assets/Icon Profile.png" alt="Icono de Perfil" class="perfil" />
+        <label for="menuToggle" class="menuLabel">
+          <img src="./assets/menu.svg" class="menuIcon" alt="menu"/>
+        </label>
+        <input type="checkbox" id="menuToggle"/>
+        <div class="navbarList">
+          <div class="navbarListItems">
+            <img src="./assets/Icon Home Active.png" alt="Icono de Home" class="home" />
+            <h3>Home</h3>
+          </div>
+          <div class="navbarListItems">
+            <img src="./assets/Icon Cart(1).png" alt="Icono de Compras" class="carrito" />
+            <h3>Carrito</h3>
+          </div>
+          <div class="navbarListItems">
+            <img src="./assets/Icon Profile.png" alt="Icono de Perfil" class="perfil" />
+            <h3>Perfil</h3>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="max-width">
@@ -37,7 +52,7 @@
             <h1>Si tenés <span>Zappi</span>,</h1>
             <h2>tenés <span>Nucba</span></h2>
             <p>Buscá lo que quieras y nucba te quedes sin comida.</p>
-            <div class="hero-button transition">
+            <div class="button-hero transition">
               <a href="#">VER MÁS</a>
             </div>
           </div>
@@ -48,6 +63,7 @@
             <div class="scale">
               <img class="pizza-right" src="./assets/pizzaLandingB.png" alt="Pizza derecha"/>
             </div>
+          </div>
       </section>
 
       <section id="recomend">
@@ -204,16 +220,14 @@
       </section>
     </main>
       <!-- section footer-->
-      <div class="terminos">
-        <ul class="terminos-link">
-          <li><a href="#">Términos de Uso</a></li>
-          <li><a href="#">Trabajá con Nosotros</a></li>
-          <li><a href="#">Soporte</a></li>
-        </ul>
-      </div>
     </main>
     <footer class="footer">
-      <p>Hecho con ❤ en</p>
+      <ul class="footer-link">
+        <li><a href="#">Términos de Uso</a></li>
+        <li><a href="#">Trabajá con Nosotros</a></li>
+        <li><a href="#">Soporte</a></li>
+      </ul>
+      <p class="footer-nucbazappi">Hecho con ❤ en</p>
       <span>NUCBAZAPPI</span>
     </footer>
   </body>
