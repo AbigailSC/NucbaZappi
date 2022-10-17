@@ -24,10 +24,11 @@
 body {
     background: #131415;
     color: white;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     margin-top: 65px;
     font-family: 'Montserrat', sans-serif;
+    /* border: 1px solid red */
 }
 
 #hero-landing {
@@ -39,7 +40,10 @@ body {
     align-items: center;
     justify-content: space-between;
     /* gap:50px; */
-     
+}
+
+#menuToggle, .menuLabel{
+  display: none;
 }
 
 .hero-text {
@@ -49,7 +53,6 @@ body {
     background: #131415;
     place-content: center;
     gap: 10px;
-
 }
 
 .hero-text h1 {
@@ -77,6 +80,7 @@ body {
 header {
     background: var(--background);
     width: 100%;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,43 +88,57 @@ header {
     padding: 0px 30px 0px 30px;
     position: fixed;
     top: 0;
+    /* border: 1px solid red */
 }
 
 .logo {
     height: 70%;
-    
 }
 
-.navbar {
+.navbar,
+.navbarList {
     display:flex;
     align-items: center;
     justify-content: center;
-    gap: 80px
+    gap: 80px;
 }
-.home {
+.navbarListItems{
+  display: flex;
+  flex-direction: row;
+  font-size: 8px;
+  font-weight: light;
+  gap: 16px;
+}
+
+.navbarListItems h3{
+  display: none;
+}
+/* .home {
     width: 20%;
-}
-.carrito {
+} */
+/* .carrito {
     width: 22px;
-
-}
-.perfil {
+} */
+/* .perfil {
     width: 13px;
-}
+} */
 
-.terminos{
+.footer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-.terminos-link {
+.footer-link {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    gap: 10px;
 }
 
-.terminos-link a {
+.footer-link a {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -131,13 +149,6 @@ header {
     font-weight: 400;
     font-size: 17px;
     color:#ffffff;
-}
-
-.footer {
-    display:flex;
-    justify-content: center;
-    padding: 8px 15px;
-    gap: 5px;
 }
 
 .footer p {
@@ -152,11 +163,6 @@ header {
     font-weight: 900;
     color:#ffffff;
     
-}
-
-.max-width {
-    max-width: 1400px;
-    margin: 0 auto;
 }
 
 #recomend{
@@ -190,6 +196,7 @@ header {
   padding: 15px;
   background-color: #252525;
   border-radius: 17px;
+  min-width: 360px;
 }
 
 .recomend-card img{
@@ -211,10 +218,9 @@ header {
 }
 
 .card-info p:nth-child(2){
-  color: #FFFFFF;
+  color: var(--textSecondary);
   font-size: 12px;
   font-weight: 500;
-  opacity: 0.3;
 }
 
 .card-info span{
@@ -240,6 +246,20 @@ header {
 #hero-landing {
     margin-top: 65px;
     padding: 4em;
+}
+
+.button-hero a {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #FFA100 0%, #FB103D 100%);
+  border-radius: 10px;
+  padding: 12px 5px;
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  margin-top: 10px;;
+  align-items: center;
 }
 
 .container {
@@ -288,7 +308,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+    /* overflow: hidden; */
 }
 
 .pizza-left {
@@ -415,6 +435,8 @@ header {
 #popularityA {
   padding: 0 5%;
   margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .textPopularity {
